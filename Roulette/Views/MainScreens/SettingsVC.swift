@@ -129,7 +129,7 @@ private extension SettingsVC {
                 print("Unable to delete user; \(error.localizedDescription)")
             } else {
             
-                (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(LoginViewController())
+                (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(UINavigationController(rootViewController: LoginViewController()))
             }
         }
     }
@@ -139,7 +139,7 @@ private extension SettingsVC {
         do {
             try Auth.auth().signOut()
             
-            (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(LoginViewController())
+            (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(UINavigationController(rootViewController: LoginViewController()))
             
         } catch let signOutError as NSError {
             print("Error signing out: %@", signOutError)
