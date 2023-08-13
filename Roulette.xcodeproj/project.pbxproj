@@ -30,6 +30,8 @@
 		CA5A4EA22A87D4B20022A7D5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CA5A4EA12A87D4B20022A7D5 /* FirebaseStorage */; };
 		CA5A4EA42A87D4B20022A7D5 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = CA5A4EA32A87D4B20022A7D5 /* FirebaseStorageCombine-Community */; };
 		CA5A4EA62A87D61B0022A7D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA5A4EA52A87D61B0022A7D5 /* GoogleService-Info.plist */; };
+		CA5A4EA82A87DB570022A7D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A4EA72A87DB570022A7D5 /* LoginViewController.swift */; };
+		CA5A4EAA2A87DB650022A7D5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A4EA92A87DB640022A7D5 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		CA5A4E852A87D1BD0022A7D5 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		CA5A4E872A87D1DB0022A7D5 /* PreviewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewExtension.swift; sourceTree = "<group>"; };
 		CA5A4EA52A87D61B0022A7D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CA5A4EA72A87DB570022A7D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CA5A4EA92A87DB640022A7D5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,8 @@
 				CA5A4E812A87D1840022A7D5 /* GameVC.swift */,
 				CA5A4E832A87D1A10022A7D5 /* RatingVC.swift */,
 				CA5A4E852A87D1BD0022A7D5 /* SettingsVC.swift */,
+				CA5A4EA72A87DB570022A7D5 /* LoginViewController.swift */,
+				CA5A4EA92A87DB640022A7D5 /* RegisterViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,6 +217,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA5A4EA82A87DB570022A7D5 /* LoginViewController.swift in Sources */,
+				CA5A4EAA2A87DB650022A7D5 /* RegisterViewController.swift in Sources */,
 				CA5A4E702A87D0C30022A7D5 /* ViewController.swift in Sources */,
 				CA5A4E842A87D1A10022A7D5 /* RatingVC.swift in Sources */,
 				CA5A4E6C2A87D0C30022A7D5 /* AppDelegate.swift in Sources */,
