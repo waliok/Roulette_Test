@@ -10,7 +10,6 @@ import FirebaseAuthUI
 import FirebaseEmailAuthUI
 import FirebaseAnonymousAuthUI
 import FirebaseGoogleAuthUI
-import FirebasePhoneAuthUI
 
 class LoginViewController: UIViewController {
     
@@ -21,6 +20,13 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setUp()
+    }
+}
+
+extension LoginViewController {
+    
+    func setUp() {
         self.auth = Auth.auth()
         self.authUI = FUIAuth.defaultAuthUI()
         self.authUI?.delegate = self
@@ -31,7 +37,7 @@ class LoginViewController: UIViewController {
         
 //        self.authStateListenerHandle = self.auth?.addStateDidChangeListener { (auth, user) in
 //            guard user != nil else {
-//                
+//
 //                return
 //            }
 //        }
@@ -56,7 +62,8 @@ extension LoginViewController: FUIAuthDelegate {
         case .none:
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(MainTabBarController())
             print("Login succeeded")
-            //            authDataResult?.user.uid
+            print("\(String(describing: authDataResult?.user.displayName))")
+            
         }
     }
 }
