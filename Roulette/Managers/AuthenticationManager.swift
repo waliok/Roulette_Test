@@ -1,10 +1,3 @@
-//
-//  AuthenticationManager.swift
-//  Roulette
-//
-//  Created by Waliok on 15/08/2023.
-//
-
 import Foundation
 import Firebase
 import FirebaseCore

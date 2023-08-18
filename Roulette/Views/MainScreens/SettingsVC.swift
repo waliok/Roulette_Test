@@ -1,10 +1,3 @@
-//
-//  SettingsVC.swift
-//  Roulette
-//
-//  Created by Waliok on 12/08/2023.
-//
-
 import UIKit
 import SnapKit
 import Firebase
@@ -25,8 +18,8 @@ class SettingsVC: UIViewController {
     private lazy var rateAppButton: UIButton = {
         var configuration = UIButton.Configuration.filled()
         configuration.title = "Rate App"
-        configuration.baseBackgroundColor = .systemBlue
-        configuration.baseForegroundColor = .systemGray6
+        configuration.baseBackgroundColor = .systemYellow
+        configuration.baseForegroundColor = .black
         configuration.cornerStyle = .medium
         configuration.buttonSize = .large
         
@@ -40,8 +33,8 @@ class SettingsVC: UIViewController {
     private lazy var shareAppButton: UIButton = {
         var configuration = UIButton.Configuration.filled()
         configuration.title = "Share App"
-        configuration.baseBackgroundColor = .systemBlue
-        configuration.baseForegroundColor = .systemGray6
+        configuration.baseBackgroundColor = .systemYellow
+        configuration.baseForegroundColor = .black
         configuration.cornerStyle = .medium
         configuration.buttonSize = .large
         
@@ -55,8 +48,8 @@ class SettingsVC: UIViewController {
     private lazy var logOutButton: UIButton = {
         var configuration = UIButton.Configuration.filled()
         configuration.title = "Log Out"
-        configuration.baseBackgroundColor = .systemBlue
-        configuration.baseForegroundColor = .systemGray6
+        configuration.baseBackgroundColor = .systemYellow
+        configuration.baseForegroundColor = .black
         configuration.cornerStyle = .medium
         configuration.buttonSize = .large
         
@@ -70,8 +63,8 @@ class SettingsVC: UIViewController {
     private lazy var deleteAccountButton: UIButton = {
         var configuration = UIButton.Configuration.filled()
         configuration.title = "Delete Account"
-        configuration.baseBackgroundColor = .systemBlue
-        configuration.baseForegroundColor = .systemGray6
+        configuration.baseBackgroundColor = .systemYellow
+        configuration.baseForegroundColor = .black
         configuration.cornerStyle = .medium
         configuration.buttonSize = .large
         
@@ -86,8 +79,14 @@ class SettingsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = .systemGray5
+        self.navigationItem.title = "Settings"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        let back = UIImageView(image: .init(named: "Roulette"))
+        back.contentMode = UIView.ContentMode.scaleToFill
+        self.view.addSubview(back)
+        back.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
         self.view.addSubview(buttonStack)
         buttonStack.addArrangedSubview(rateAppButton)
         buttonStack.addArrangedSubview(shareAppButton)

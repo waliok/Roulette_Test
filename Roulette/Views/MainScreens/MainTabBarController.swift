@@ -1,21 +1,15 @@
-//
-//  MainTabBarController.swift
-//  Roulette
-//
-//  Created by Waliok on 12/08/2023.
-//
-
 import UIKit
 
 class MainTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewControllers = [generateVC(vc: GameVC(), title: "Game", icon: "gamecontroller.fill", nav: true),
-                           generateVC(vc: RatingVC(), title: "Rating", icon: "star.fill"),
-                           generateVC(vc: SettingsVC(), title: "Settings", icon: "gearshape.fill")]
         
-        setTabBar()
+        viewControllers = [generateVC(vc: UIHostingController(rootView: GameView()), title: "Game", icon: "gamecontroller.fill", nav: true),
+                           generateVC(vc: UINavigationController(rootViewController: RatingVC()), title: "Rating", icon: "star.fill"),
+                           generateVC(vc: UINavigationController(rootViewController: SettingsVC()), title: "Settings", icon: "gearshape.fill")]
+        
+        setUpTabBar()
     }
     
     private func generateVC(vc: UIViewController, title: String, icon: String, nav: Bool = false) -> UIViewController {
@@ -27,27 +21,13 @@ class MainTabBarController: UITabBarController {
         return vc
     }
     
-    private func setTabBar() {
-        let positionOnX: CGFloat = 10
-        let positionOnY: CGFloat = 14
-        let width = tabBar.bounds.width - positionOnX * 2
-        let height = tabBar.bounds.height + positionOnY * 2
+    private func setUpTabBar() {
         
         let roundedLayer = CAShapeLayer()
-        let path = UIBezierPath(roundedRect: CGRect(x: positionOnX,
-                                                    y: tabBar.bounds.minY - positionOnY,
-                                                    width: width,
-                                                    height: height),
-                                cornerRadius: height / 2)
-        
-        roundedLayer.path = path.cgPath
-        tabBar.layer.insertSublayer(roundedLayer, at: 0)
-        tabBar.itemWidth = width / 3
         tabBar.itemPositioning = .centered
-        
         roundedLayer.fillColor = UIColor.lightGray.cgColor
-        tabBar.tintColor = .green
-        tabBar.unselectedItemTintColor = .magenta
+        tabBar.tintColor = .systemYellow
+        tabBar.unselectedItemTintColor = .systemGray
     }
 }
 
@@ -58,7 +38,6 @@ import SwiftUI
 struct MainTabBar_Preview: PreviewProvider {
     
     static var previews: some View {
-        // view controller using programmatic UI
         MainTabBarController()
             .showPreview()
             .ignoresSafeArea()

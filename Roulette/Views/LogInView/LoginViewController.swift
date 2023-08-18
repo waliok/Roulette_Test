@@ -1,10 +1,3 @@
-//
-//  LoginViewController.swift
-//  Roulette
-//
-//  Created by Waliok on 12/08/2023.
-//
-
 import UIKit
 import FirebaseAuthUI
 import FirebaseEmailAuthUI
@@ -34,13 +27,6 @@ extension LoginViewController {
             FUIAnonymousAuth(),
             FUIEmailAuth(),
             FUIGoogleAuth(authUI: FUIAuth.defaultAuthUI()!)]
-        
-//        self.authStateListenerHandle = self.auth?.addStateDidChangeListener { (auth, user) in
-//            guard user != nil else {
-//
-//                return
-//            }
-//        }
         
         let authViewController = FUICustomAuthPickerViewController(authUI: authUI!)
         authViewController.modalPresentationStyle = .fullScreen

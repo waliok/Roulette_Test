@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA4FBA942A8E454600A843F7 /* ChipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4FBA8C2A8E454600A843F7 /* ChipsView.swift */; };
+		CA4FBA952A8E454600A843F7 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4FBA8D2A8E454600A843F7 /* Variables.swift */; };
+		CA4FBA962A8E454600A843F7 /* RouletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4FBA8E2A8E454600A843F7 /* RouletteView.swift */; };
+		CA4FBA972A8E454600A843F7 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4FBA8F2A8E454600A843F7 /* ButtonView.swift */; };
+		CA4FBA982A8E454600A843F7 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4FBA902A8E454600A843F7 /* BackgroundView.swift */; };
+		CA4FBA992A8E454600A843F7 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4FBA912A8E454600A843F7 /* BoardView.swift */; };
+		CA4FBA9B2A8E454600A843F7 /* CasinoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4FBA932A8E454600A843F7 /* CasinoView.swift */; };
+		CA4FBA9D2A8E834A00A843F7 /* RatingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4FBA9C2A8E834A00A843F7 /* RatingVC.swift */; };
+		CA4FBA9F2A8F602900A843F7 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4FBA9E2A8F602900A843F7 /* UserDataModel.swift */; };
 		CA5A4E6C2A87D0C30022A7D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A4E6B2A87D0C30022A7D5 /* AppDelegate.swift */; };
 		CA5A4E6E2A87D0C30022A7D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A4E6D2A87D0C30022A7D5 /* SceneDelegate.swift */; };
 		CA5A4E752A87D0C40022A7D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5A4E742A87D0C40022A7D5 /* Assets.xcassets */; };
 		CA5A4E782A87D0C40022A7D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5A4E762A87D0C40022A7D5 /* LaunchScreen.storyboard */; };
 		CA5A4E802A87D1650022A7D5 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A4E7F2A87D1650022A7D5 /* MainTabBarController.swift */; };
-		CA5A4E822A87D1840022A7D5 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A4E812A87D1840022A7D5 /* GameVC.swift */; };
-		CA5A4E842A87D1A10022A7D5 /* RatingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A4E832A87D1A10022A7D5 /* RatingVC.swift */; };
 		CA5A4E862A87D1BD0022A7D5 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A4E852A87D1BD0022A7D5 /* SettingsVC.swift */; };
 		CA5A4E882A87D1DB0022A7D5 /* PreviewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A4E872A87D1DB0022A7D5 /* PreviewExtension.swift */; };
 		CA5A4E8B2A87D2780022A7D5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CA5A4E8A2A87D2780022A7D5 /* SnapKit */; };
@@ -42,12 +49,20 @@
 		CA5A4ED12A8940380022A7D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA5A4ED02A8940380022A7D5 /* GoogleService-Info.plist */; };
 		CA5A4ED42A8987820022A7D5 /* FUICustomAuthPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A4ED32A8987820022A7D5 /* FUICustomAuthPickerViewController.swift */; };
 		CA7CDCE82A8AEC490030266E /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7CDCE72A8AEC490030266E /* UserManager.swift */; };
-		CABF657D2A89A25100ABE4FC /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF657C2A89A25100ABE4FC /* UserInfoView.swift */; };
 		CABF65812A8A488A00ABE4FC /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF65802A8A488A00ABE4FC /* PaddingLabel.swift */; };
 		CABF65832A8AE5E900ABE4FC /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF65822A8AE5E900ABE4FC /* AuthenticationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA4FBA8C2A8E454600A843F7 /* ChipsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChipsView.swift; sourceTree = "<group>"; };
+		CA4FBA8D2A8E454600A843F7 /* Variables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
+		CA4FBA8E2A8E454600A843F7 /* RouletteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouletteView.swift; sourceTree = "<group>"; };
+		CA4FBA8F2A8E454600A843F7 /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		CA4FBA902A8E454600A843F7 /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		CA4FBA912A8E454600A843F7 /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		CA4FBA932A8E454600A843F7 /* CasinoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CasinoView.swift; sourceTree = "<group>"; };
+		CA4FBA9C2A8E834A00A843F7 /* RatingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingVC.swift; sourceTree = "<group>"; };
+		CA4FBA9E2A8F602900A843F7 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
 		CA5A4E682A87D0C30022A7D5 /* Roulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roulette.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5A4E6B2A87D0C30022A7D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA5A4E6D2A87D0C30022A7D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,15 +70,12 @@
 		CA5A4E772A87D0C40022A7D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA5A4E792A87D0C40022A7D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA5A4E7F2A87D1650022A7D5 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		CA5A4E812A87D1840022A7D5 /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
-		CA5A4E832A87D1A10022A7D5 /* RatingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingVC.swift; sourceTree = "<group>"; };
 		CA5A4E852A87D1BD0022A7D5 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		CA5A4E872A87D1DB0022A7D5 /* PreviewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewExtension.swift; sourceTree = "<group>"; };
 		CA5A4EA72A87DB570022A7D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CA5A4ED02A8940380022A7D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CA5A4ED32A8987820022A7D5 /* FUICustomAuthPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUICustomAuthPickerViewController.swift; sourceTree = "<group>"; };
 		CA7CDCE72A8AEC490030266E /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
-		CABF657C2A89A25100ABE4FC /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		CABF65802A8A488A00ABE4FC /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		CABF65822A8AE5E900ABE4FC /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +113,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA4FBA8B2A8E452200A843F7 /* SwiftUI_Game */ = {
+			isa = PBXGroup;
+			children = (
+				CA4FBA932A8E454600A843F7 /* CasinoView.swift */,
+				CA4FBA902A8E454600A843F7 /* BackgroundView.swift */,
+				CA4FBA912A8E454600A843F7 /* BoardView.swift */,
+				CA4FBA8F2A8E454600A843F7 /* ButtonView.swift */,
+				CA4FBA8C2A8E454600A843F7 /* ChipsView.swift */,
+				CA4FBA8E2A8E454600A843F7 /* RouletteView.swift */,
+				CA4FBA8D2A8E454600A843F7 /* Variables.swift */,
+				CA4FBA9E2A8F602900A843F7 /* UserDataModel.swift */,
+			);
+			path = SwiftUI_Game;
+			sourceTree = "<group>";
+		};
 		CA5A4E5F2A87D0C30022A7D5 = {
 			isa = PBXGroup;
 			children = (
@@ -160,22 +187,13 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		CA7CDCEA2A8C2B7B0030266E /* SecondaryViews */ = {
-			isa = PBXGroup;
-			children = (
-				CABF657C2A89A25100ABE4FC /* UserInfoView.swift */,
-			);
-			path = SecondaryViews;
-			sourceTree = "<group>";
-		};
 		CABF65782A89918900ABE4FC /* MainScreens */ = {
 			isa = PBXGroup;
 			children = (
 				CA5A4E7F2A87D1650022A7D5 /* MainTabBarController.swift */,
-				CA5A4E812A87D1840022A7D5 /* GameVC.swift */,
-				CA5A4E832A87D1A10022A7D5 /* RatingVC.swift */,
+				CA4FBA8B2A8E452200A843F7 /* SwiftUI_Game */,
+				CA4FBA9C2A8E834A00A843F7 /* RatingVC.swift */,
 				CA5A4E852A87D1BD0022A7D5 /* SettingsVC.swift */,
-				CA7CDCEA2A8C2B7B0030266E /* SecondaryViews */,
 			);
 			path = MainScreens;
 			sourceTree = "<group>";
@@ -290,17 +308,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				CABF65812A8A488A00ABE4FC /* PaddingLabel.swift in Sources */,
+				CA4FBA9D2A8E834A00A843F7 /* RatingVC.swift in Sources */,
 				CA5A4EA82A87DB570022A7D5 /* LoginViewController.swift in Sources */,
-				CA5A4E842A87D1A10022A7D5 /* RatingVC.swift in Sources */,
+				CA4FBA982A8E454600A843F7 /* BackgroundView.swift in Sources */,
+				CA4FBA942A8E454600A843F7 /* ChipsView.swift in Sources */,
+				CA4FBA9F2A8F602900A843F7 /* UserDataModel.swift in Sources */,
 				CA7CDCE82A8AEC490030266E /* UserManager.swift in Sources */,
 				CA5A4E6C2A87D0C30022A7D5 /* AppDelegate.swift in Sources */,
 				CA5A4E802A87D1650022A7D5 /* MainTabBarController.swift in Sources */,
-				CA5A4E822A87D1840022A7D5 /* GameVC.swift in Sources */,
+				CA4FBA972A8E454600A843F7 /* ButtonView.swift in Sources */,
 				CA5A4E6E2A87D0C30022A7D5 /* SceneDelegate.swift in Sources */,
 				CABF65832A8AE5E900ABE4FC /* AuthenticationManager.swift in Sources */,
 				CA5A4E862A87D1BD0022A7D5 /* SettingsVC.swift in Sources */,
+				CA4FBA992A8E454600A843F7 /* BoardView.swift in Sources */,
+				CA4FBA9B2A8E454600A843F7 /* CasinoView.swift in Sources */,
 				CA5A4ED42A8987820022A7D5 /* FUICustomAuthPickerViewController.swift in Sources */,
-				CABF657D2A89A25100ABE4FC /* UserInfoView.swift in Sources */,
+				CA4FBA962A8E454600A843F7 /* RouletteView.swift in Sources */,
+				CA4FBA952A8E454600A843F7 /* Variables.swift in Sources */,
 				CA5A4E882A87D1DB0022A7D5 /* PreviewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

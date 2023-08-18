@@ -1,9 +1,3 @@
-//
-//  File.swift
-//  Roulette
-//
-//  Created by Waliok on 13/08/2023.
-//
 import FirebaseAuthUI
 
 class FUICustomAuthPickerViewController: FUIAuthPickerViewController {
