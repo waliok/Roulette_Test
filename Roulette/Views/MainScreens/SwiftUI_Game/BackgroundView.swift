@@ -62,7 +62,7 @@ struct BackgroundView: View {
                             .foregroundColor(.white)
                             .padding()
                         Button {
-                            
+                            data.totalCredits = 100
                         } label: {
                             Text("Try again")
                         }
